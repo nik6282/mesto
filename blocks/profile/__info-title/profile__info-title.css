@@ -1,0 +1,29 @@
+.profile__info-title {
+  margin: 0;
+  /* margin-right: 18px; */
+  padding: 0;
+  /* padding-right: 18px; */
+
+  /* grid-area: title; */
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  /* or 114% - 48px*/
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  .profile__info-title {
+    margin-right: 10px;
+    font-size: 27px;
+    line-height: 33px;
+    /* or 122% - 33px */
+    text-align: right;
+  }
+}

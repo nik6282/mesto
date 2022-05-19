@@ -1,8 +1,16 @@
 .header__logo {
   max-width: 142px;
   min-width: 104px;
-  display: block;
+  /* dimensions: 142 x 33 */
+  /* dimensions: 104 x 24 */
   margin: 0;
-  margin-bottom: 41px;
   padding: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    max-width: 104px;
+    margin-left: 27px;
+  }
 }

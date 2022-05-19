@@ -1,0 +1,11 @@
+.content {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* @media screen and (max-width: 1080px) { */
+  /* .content { */
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+  /* } */
+/* } */
