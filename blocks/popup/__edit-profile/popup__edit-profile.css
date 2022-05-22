@@ -1,6 +1,7 @@
-.popup_profile-edit {
+.popup__edit-profile {
   margin: 0;
   padding: 0;
-
+  display:none;
+  
   border: 1px solid red;
 }

@@ -1,3 +1,23 @@
+const root = document.querySelector('.page');
+const profile = root.querySelector('.profile')
+
+const btnEditProfile = profile.querySelector ('.profile__edit-button');
+const btnAddPlace = profile.querySelector('.profile__add-place-button')
+
+const popupEditProfile = root.querySelector('.popup__edit-profile');
+
+btnEditProfile.addEventListener('click', popupEditProfileActive);
+
+function popupEditProfileActive() {
+  console.log('Hello World');
+  popupEditProfile.classList.add('popup_active');
+  // popupEditProfile.classList.add('popup_active');
+};
+
+
+// console.log (btnEdit);
+// console.log (btnAddPlace);
+
 // .popup__close-icon {
 //   width: 32px;
 //   height: 32px;
@@ -11,13 +31,14 @@
 //   border: none;
 // }
 
-let formElement = document.querySelector("a");
-let nameInput = formElement.querySelector("a");
-let jobInput = formElement.querySelector("a");
+// let formElement = document.querySelector("a");
+// let nameInput = formElement.querySelector("a");
+// let jobInput = formElement.querySelector("a");
 
-function formSubmitHandler (evt) {
-  evt.preventDefault();
-
-  myName.textcontent = nameInput.value;
-
-}
+// function formSubmitHandler (evt) {
+  // evt.preventDefault();
+  // let myName;
+  // let nameInput;
+  
+  // myName.textcontent = nameInput.value;
+// }

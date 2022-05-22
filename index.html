@@ -17,17 +17,26 @@
 
       <section class="profile">
         <img class="profile__avatar" src="./images/JCousteau_photo.jpg" alt="Жак-Ив Кусто аватар">
-        <!-- <div class="profile__info">
+        <div class="profile__info">
           <h1 class="profile__info-title">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button" type="button" name="btnEdit"></button>
+          <button
+            class = "profile__edit-button"
+            type  = "button"
+            name  = "btnEdit"
+            id    = "btnEdit">
+          </button>
           <p class="profile__info-subtitle">Исследователь океана</p>
-        </div> -->
-        <!-- <button class="profile__add-place-button" type="button" name="btnAddPlace"></button> -->
-        <!-- <img src="./images/plus-sign.svg" alt="Добавить"> -->
+        </div>
+        <button
+          class = "profile__add-place-button"
+          type  = "button"
+          name  = "btnAddPlace"
+          id    = "btnAddPlace">
+        </button>
       </section>
 
       <section class="content" aria-label="основная секция">
-        <ul class="places">
+      <!--  <ul class="places">
           <li class="place-card">
             <img class="place-card__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
             <div class="place-card__info">
@@ -71,7 +80,7 @@
               <button class="place-card__like-button" type="button"></button>
             </div>
           </li>
-        </ul>
+        </ul> -->
       </section>
     </main>
     <footer class="footer">
@@ -79,10 +88,10 @@
     </footer>
 
     <!-- popup profile edit -->
-    <div class="popup popup_edit-profile">
-
+    <div class="popup popup__edit-profile">
+      Hello World!
     </div>
-
+      
       <!-- <div class="popup__container">
         <button class="popup_button-close" type="button" name="btnClose"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
@@ -116,6 +125,6 @@
           </fieldset>
         </form>
       </div> -->
-    <!-- <script type="module" src="./scripts/index.js"></script> -->
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

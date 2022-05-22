@@ -4,13 +4,14 @@
 
   max-width: 880px;
   width: 100%;
-  height: calc(56px + ((100vw - 320px) * (18 / 960)));
   max-height: 74px;
   min-height: 56px;
+  height: calc(56px + ((100vw - 320px) * (18 / 960)));
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  /* border color: #545454; &84,84,84, 0.7*/
-  /* border opacity: 0.7 */
+  /* border color: HEX = #545454;
+                   RGB = 84,84,84, 0.7
+            opacity: 0.7 */
 } 
 
 @media screen and (max-width: 1080px) {

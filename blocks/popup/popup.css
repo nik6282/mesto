@@ -1,5 +1,6 @@
 .popup {
-  margin: 0;
+  display: none;
+  /* margin: 0;
   padding: 0;
 
   top: 20%;
@@ -15,5 +16,5 @@
   border: 1px solid red;
   visibility: visible;
   opacity: 1;
-
+ */
 }
