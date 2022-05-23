@@ -5,6 +5,7 @@ const btnEditProfile = profile.querySelector ('.profile__edit-button');
 const btnAddPlace = profile.querySelector('.profile__add-place-button')
 
 const popupEditProfile = root.querySelector('.popup__edit-profile');
+const btnLikes = root.querySelectorAll('.place-card__like-button')
 
 btnEditProfile.addEventListener('click', popupEditProfileActive);
 
@@ -14,6 +15,13 @@ function popupEditProfileActive() {
   // popupEditProfile.classList.add('popup_active');
 };
 
+// for each btnLikes {
+//   btnLikes[],addEventListener('click', btnLikeActive);
+// }
+
+// function btnLikeActive() {
+//   btnLikes[i].toggleAttribute('place-card__like-button_active') 
+// }
 
 // console.log (btnEdit);
 // console.log (btnAddPlace);

@@ -1,4 +1,4 @@
 .popup_active{
-  border: 1px solid green;
-  display: block;
+  /* border: 1px solid green; */
+  display: flex;
 }

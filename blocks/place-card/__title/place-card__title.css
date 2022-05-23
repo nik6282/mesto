@@ -1,7 +1,9 @@
 .place-card__title {
   margin: 0;
-  padding: 0;
+  /* margin-right: auto; */
+  padding: 0 ;
 
+  max-width: 100%;
   /* font-family: 'Inter'; */
   font-style: normal;
   font-weight: 900;
@@ -12,5 +14,5 @@
   white-space: nowrap;
   overflow: hidden;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
