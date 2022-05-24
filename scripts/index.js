@@ -1,52 +1,41 @@
 const root = document.querySelector('.page');
 const profile = root.querySelector('.profile')
+const profileName = profile.querySelector('.profile__info-title');
+const profileAbout = profile.querySelector('.profile__info-subtitle');
+const popup = root.querySelector('.popup');
+const popupEditProfile = root.querySelector('.popup__edit-prolie');
 
 const btnEditProfile = profile.querySelector ('.profile__edit-button');
-const btnAddPlace = profile.querySelector('.profile__add-place-button')
+const btnCloseEditProfile = popupEditProfile.querySelector('.popup__close-button');
+const btnSaveEditProfile = popupEditProfile.querySelector('#btnOK-frmEditProfile')
+const inputProfileName = popupEditProfile.querySelector('#name-input');
+const inputProfileAbout = popupEditProfile.querySelector('#about-input');
 
-const popupEditProfile = root.querySelector('.popup__edit-profile');
-const btnLikes = root.querySelectorAll('.place-card__like-button')
+btnEditProfile.addEventListener('click', onclickOpenEditProfile);
+btnCloseEditProfile.addEventListener('click', onclickCloseEditProfile);
+btnSaveEditProfile.addEventListener('click', onclickSaveEditProfile);
 
-btnEditProfile.addEventListener('click', popupEditProfileActive);
-
-function popupEditProfileActive() {
-  console.log('Hello World');
-  popupEditProfile.classList.add('popup_active');
-  // popupEditProfile.classList.add('popup_active');
+function onclickOpenEditProfile() {
+  openPopupForm(popup);
+  inputProfileName.value = profileName.textContent;
+  inputProfileAbout.value = profileAbout.textContent;
 };
 
-// for each btnLikes {
-//   btnLikes[],addEventListener('click', btnLikeActive);
-// }
+function onclickCloseEditProfile() {
+  closePopupForm(popup);
+};
 
-// function btnLikeActive() {
-//   btnLikes[i].toggleAttribute('place-card__like-button_active') 
-// }
+function onclickSaveEditProfile() {
+  profileName.textContent = inputProfileName.value;
+  profileAbout.textContent = inputProfileAbout.value;
+  onclickCloseEditProfile();
+};
 
-// console.log (btnEdit);
-// console.log (btnAddPlace);
+function openPopupForm(popupForm) {
+  popupForm.classList.add('popup_active');
+};
 
-// .popup__close-icon {
-//   width: 32px;
-//   height: 32px;
-//   position: absolute;
-//   right: -40px;
-//   top: -40px;
-//   opacity: 1;
-//   transition: opacity 0.2s linear 0.1s;
-//   background: none;
-//   background-image: url(images/Close_Icon.png);
-//   border: none;
-// }
+function closePopupForm(popupForm) {
+  popupForm.classList.remove('popup_active');
+};
 
-// let formElement = document.querySelector("a");
-// let nameInput = formElement.querySelector("a");
-// let jobInput = formElement.querySelector("a");
-
-// function formSubmitHandler (evt) {
-  // evt.preventDefault();
-  // let myName;
-  // let nameInput;
-  
-  // myName.textcontent = nameInput.value;
-// }

@@ -1,8 +1,7 @@
 .header__logo {
+  /* dimensions: 142 x 33 */
   max-width: 142px;
   min-width: 104px;
-  /* dimensions: 142 x 33 */
-  /* dimensions: 104 x 24 */
   margin: 0;
   padding: 0;
 }
@@ -10,7 +9,8 @@
 
 @media screen and (max-width: 1024px) {
   .header__logo {
-    max-width: 104px;
+  /* dimensions: 104 x 24 */
+  max-width: 104px;
     margin-left: 27px;
   }
 }
