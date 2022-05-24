@@ -1,0 +1,28 @@
+.popup__edit-prolie {
+  margin: 0;
+  padding: 34px 36px 37px;
+
+  max-width: 430px;
+  width: 100%;
+ 
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* justify-content: space-between; */
+  align-items: left;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .popup__edit-prolie {
+    max-width: 282px;
+    padding-top: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 25px;
+  }
+}

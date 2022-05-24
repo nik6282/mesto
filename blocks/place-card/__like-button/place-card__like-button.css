@@ -1,0 +1,26 @@
+.place-card__like-button {
+  margin: 0;
+  padding: 5px;
+  width: 32px;
+  height: 29px;
+
+  box-sizing: border-box;
+  background: none;
+  position: relative;
+  bottom: -1px;
+  
+  background-image: url("../../../images/heart.svg");
+  background-size: 22px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+
+  transition-property: opacity, transform;
+  transition: 0.5s linear;
+}
+
+.place-card__like-button:hover {
+  opacity: 0.6;
+}
