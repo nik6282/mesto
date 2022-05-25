@@ -14,24 +14,25 @@
     </header>
 
     <main class="main">
-
       <section class="profile">
-        <img class="profile__avatar" src="./images/JCousteau_photo.jpg" alt="Жак-Ив Кусто аватар">
+        <img class="profile__avatar" src="./images/JCousteau_photo.jpg" alt="Аватар">
         <div class="profile__info">
           <h1 class="profile__info-title">Жак-Ив Кусто</h1>
           <button
-            class = "profile__edit-button"
-            type  = "button"
-            name  = "btnEdit"
-            id    = "btnEdit">
+            class="profile__edit-button"
+            id="btnEditProfile"
+            type="button"
+            name="btnEditProfile"
+            aria-label="Радактировать профиль">
           </button>
           <p class="profile__info-subtitle">Исследователь океана</p>
         </div>
         <button
-          class = "profile__add-place-button"
-          type  = "button"
-          name  = "btnAddPlace"
-          id    = "btnAddPlace">
+          class="profile__add-place-button"
+          id="btnAddPlace"
+          type="button"
+          name="btnAddPlace"
+          aria-label="Добавить">
         </button>
       </section>
 
@@ -41,10 +42,11 @@
             <img class="place-card__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
             <div class="place-card__info">
               <h2 class="place-card__title">Карачаевск</h2>
-              <button 
-                class ="place-card__like-button"
-                name  = "btnLike"
-                type  ="button">
+              <button
+                class="place-card__like-button"
+                name="btnLike"
+                type="button"
+                aria-label="Нравится">
               </button>
             </div>
           </li>
@@ -53,9 +55,10 @@
             <div class="place-card__info">
               <h2 class="place-card__title">Гора Эльбрус</h2>
               <button
-                class = "place-card__like-button"
-                name  = "btnLike"
-                type  = "button">
+                class="place-card__like-button"
+                name="btnLike"
+                type="button"
+                aria-label="Нравится">
               </button>
             </div>
           </li>
@@ -63,28 +66,44 @@
             <img class="place-card__photo" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
             <div class="place-card__info">
               <h2 class="place-card__title">Домбай</h2>
-              <button class="place-card__like-button" type="button"></button>
+              <button
+                class="place-card__like-button"
+                type="button"
+                aria-label="Нравится">
+              </button>
             </div>
           </li>
           <li class="place-card">
             <img class="place-card__photo" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Гора Эльбрус">
             <div class="place-card__info">
               <h2 class="place-card__title">Гора Эльбрус</h2>
-              <button class="place-card__like-button" type="button"></button>
+              <button
+                class="place-card__like-button"
+                type="button"
+                aria-label="Нравится">
+              </button>
             </div>
           </li>
           <li class="place-card">
             <img class="place-card__photo" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
             <div class="place-card__info">
               <h2 class="place-card__title">Домбай</h2>
-              <button class="place-card__like-button" type="button"></button>
+              <button
+                class="place-card__like-button"
+                type="button"
+                aria-label="Нравится">
+              </button>
             </div>
           </li>
           <li class="place-card">
             <img class="place-card__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаево-Черкессия">
             <div class="place-card__info">
               <h2 class="place-card__title">Карачаево-Черкессия</h2>
-              <button class="place-card__like-button" type="button"></button>
+              <button
+                class="place-card__like-button"
+                type="button"
+                aria-label="Нравится">
+              </button>
             </div>
           </li>
         </ul>
@@ -97,52 +116,55 @@
     </footer>
 
     <!-- popup profile edit -->
-    <section class="popup" aria-label="всплывающие окна"> 
+    <div class="popup" aria-label="всплывающие окна">
       <div class="popup__edit-prolie">
         <button
-          class = "popup__close-button"
-          type  = "button"
-          name  = "btnClose">
+          class="popup__close-button"
+          name="btnCloseEditProfile"
+          id="btnCloseEditProfile"
+          type="button"
+          aria-label="Редактировать профиль">
         </button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <form
-          class = "form-edit"
-          name  = "frmEditProfile"
+          class="form-edit-profile"
+          id="frmEditProfile"
+          name="frmEditProfile"
           novalidate>
           <fieldset class="form-edit__info">
             <input
-              class       = "form-edit__input"
-              name        = "name-input"
-              id          = "name-input"
-              type        = "text"
-              placeholder = "Имя"
-              minlength   = "2"
-              maxlength   ="30"
+              class="form-edit__input"
+              name="name-input"
+              id="name-input"
+              type="text"
+              placeholder="Имя"
+              minlength="2"
+              maxlength="30"
               required
             />
             <input
-              class       = "form-edit__input"
-              name        = "about-input"
-              id          = "about-input"
-              type        = "text"
-              placeholder = "О себе"
-              minlength   = "2"
-              maxlength   = "50"
+              class="form-edit__input"
+              name="about-input"
+              id="about-input"
+              type="text"
+              placeholder="О себе"
+              minlength="2"
+              maxlength="50"
               required
             />
             <button
-              class = "form-edit__submit-button"
-              id = "btnOK-frmEditProfile"
-              type  = "button"
-              name  = "btnOK"
-              value = "Submit"
-              >
+              class="form-edit__submit-button"
+              name="btnSubmitEditProfile"
+              id="btnSubmitEditProfile"
+              type="submit"
+              value="Submit form"
+              aria-label="Сохранить">
               Сохранить
             </button>
         </fieldset>
         </form>
       </div>
-    </section>
+    </div>
 
     <script src="./scripts/index.js"></script>
 

@@ -1,15 +1,28 @@
 .form-edit__submit-button {
   margin: 0 auto;
   padding: 14px 0 18px;
-
   width: 100%;
   background-color: #000;
+  border-radius: 2px;
   color: #fff;
-
-  font-family: 'Inter';
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  cursor: pointer;
+  transition-property: opacity, transform;
+  transition: 0.4s linear;
+}
+
+.form-edit__submit-button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 640px) {
+  .form-edit__submit-button {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
