@@ -1,4 +1,4 @@
-.popup__edit-prolie {
+.popup__edit-profile {
   margin: 0;
   padding: 34px 36px 37px;
   max-width: 430px;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .popup__edit-prolie {
+  .popup__edit-profile {
     max-width: 282px;
     padding-top: 25px;
     padding-left: 22px;

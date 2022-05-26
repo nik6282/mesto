@@ -8,14 +8,13 @@ const profileAbout = profileInfo.querySelector('.profile__info-subtitle');
 
 // объявляем секцию для popup и модального окна Редактирования Профиля
 const popup = root.querySelector('.popup');
-const popupEditProfile = root.querySelector('.popup__edit-prolie');
-const frmEditProfile = popupEditProfile.querySelector('.form-edit-profile');
+const popupEditProfile = root.querySelector('.popup__edit-profile');
+const frmEditProfile = popupEditProfile.querySelector('.form-edit');
 // поля отображения для Профиля: Имя и О_себе
 const inputProfileName = popupEditProfile.querySelector('#name-input');
 const inputProfileAbout = popupEditProfile.querySelector('#about-input');
 // кнопки для формы Закрыть
 const btnCloseEditProfile = popupEditProfile.querySelector('.popup__close-button');
-// const btnSubmitEditProfile = popupEditProfile.querySelector('.form-edit__submit-button');
 
 function openEditProfile_OnClick() {
   popup.classList.add('popup_active');
