@@ -38,7 +38,7 @@
 /* section popups */
 @import url("../blocks/popup/popup.css");
 @import url('../blocks/popup/_active/popup_active.css');
-@import url("../blocks/popup/__edit-prolie/popup__edit-prolie.css");
+@import url("../blocks/popup/__edit-profile/popup__edit-profile.css");
 @import url("../blocks/popup/__close-button/popup__close-button.css");
 @import url("../blocks/popup/__title/popup__title.css");
 
