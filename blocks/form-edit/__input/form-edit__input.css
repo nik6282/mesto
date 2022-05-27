@@ -1,6 +1,6 @@
 .form-edit__input {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   padding: 0 0 13px;
   width: 100%;
   font-family: "Inter", Arial, sans-serif;
@@ -14,11 +14,14 @@
 }
 
 .form-edit__input:last-of-type {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 640px) {
+  .form-edit__input {
+    margin-bottom: 24px;
+  }
   .form-edit__input:last-of-type {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 }
