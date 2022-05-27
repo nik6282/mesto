@@ -23,5 +23,6 @@
 @media screen and (max-width: 640px) {
   .profile__add-place-button {
     width: 100%;
+    background-size: 16px auto;
   }
 }
