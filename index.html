@@ -40,6 +40,12 @@
         <ul class="places">
           <li class="place-card">
             <img class="place-card__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+            <button
+              class="place-card__delete-button"
+              name="btnDelete"
+              type="button"
+              aria-label="Удалить">
+            </button>
             <div class="place-card__info">
               <h2 class="place-card__title">Карачаевск</h2>
               <button
@@ -117,6 +123,8 @@
 
     <!-- popup profile edit -->
     <div class="popup" aria-label="всплывающие окна">
+
+<!-- форма для редактирования профиля -->
       <div class="popup__edit-profile">
         <button
           class="popup__close-button"
@@ -163,6 +171,17 @@
             </button>
         </fieldset>
         </form>
+      </div>
+
+<!-- форма для добавления карточки "место" -->
+    <div class="popup" aria-label="всплывающие окна">
+      <div class="popup__add-place">
+        <button
+          class="popup__close-button"
+          type="button"
+          id="btnCloseAddPlace"
+          area-label="Добавить место">
+        </button>
       </div>
     </div>
 

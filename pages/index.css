@@ -28,6 +28,7 @@
 @import url("../blocks/place-card/__photo/place-card__photo.css");
 @import url("../blocks/place-card/__info/place-card__info.css");
 @import url("../blocks/place-card/__title/place-card__title.css");
+@import url("../blocks/place-card/__delete-button/place-card__delete-button.css");
 @import url("../blocks/place-card/__like-button/place-card__like-button.css");
 @import url("../blocks/place-card/__like-button/_active/place-card__like-button_active.css");
 
@@ -46,3 +47,5 @@
 @import url("../blocks/form-edit/__info/form-edit__info.css");
 @import url("../blocks/form-edit/__input/form-edit__input.css");
 @import url("../blocks/form-edit/__submit-button/form-edit__submit-button.css");
+
+@import url("../blocks/popup/__add-place/popup__add-place.css");

@@ -1,10 +1,11 @@
 const root = document.querySelector('.page');
 
+// сведения о профиле и кнопка для редактирования
 const profile = root.querySelector('.profile');
 const profileInfo = profile.querySelector('.profile__info');
-const btnEditProfile = profileInfo.querySelector ('.profile__edit-button');
 const profileName = profileInfo.querySelector('.profile__info-title');
 const profileAbout = profileInfo.querySelector('.profile__info-subtitle');
+const btnEditProfile = profileInfo.querySelector ('.profile__edit-button');
 
 // объявляем секцию для popup и модального окна Редактирования Профиля
 const popup = root.querySelector('.popup');
@@ -16,13 +17,15 @@ const inputProfileAbout = popupEditProfile.querySelector('#about-input');
 // кнопки для формы Закрыть
 const btnCloseEditProfile = popupEditProfile.querySelector('.popup__close-button');
 
-function openEditProfile_OnClick() {
+function openEditProfile_OnClick(evt) {
+  console.log(evt.target);
   popup.classList.add('popup_active');
   inputProfileName.value = profileName.textContent;
   inputProfileAbout.value = profileAbout.textContent;
 };
 
-function closeEditProfile_OnClick() {
+function closeEditProfile_OnClick(evt) {
+  console.log(evt.target)
   popup.classList.remove('popup_active');
 };
 

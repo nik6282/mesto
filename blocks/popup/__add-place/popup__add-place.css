@@ -1,0 +1,26 @@
+.popup__add-place {
+  margin: 0;
+  padding: 34px 36px 37px;
+  max-width: 430px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: left;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 10px;
+
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 1080px) {
+  .popup__add-place {
+    max-width: 282px;
+    padding-top: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 25px;
+  }

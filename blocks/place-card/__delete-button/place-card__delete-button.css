@@ -1,0 +1,26 @@
+.place-card__delete-button {
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 19px;
+  box-sizing: border-box;
+  background: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  align-self: flex-end;
+  justify-self: flex-start;
+  background-image: url("../../../images/trash.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  transition-property: opacity, transform;
+  transition: 0.5s linear;
+}
+
+.place-card__delete-button:hover {
+  /* background-image: url("../../../images/trash(2).svg"); */
+  opacity: 0.6;
+}
