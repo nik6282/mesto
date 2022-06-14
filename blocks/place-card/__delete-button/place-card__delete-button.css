@@ -21,6 +21,5 @@
 }
 
 .place-card__delete-button:hover {
-  /* background-image: url("../../../images/trash(2).svg"); */
   opacity: 0.6;
 }
